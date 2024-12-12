@@ -1,0 +1,50 @@
+*{
+    font-family: "PT Sans Caption", serif;
+}
+*::selection{
+    background-color: #FEC260;
+}
+body{
+    background-color: #F7ECDE;
+    
+}
+
+h2{
+    font-family: "Pacifico", serif;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    
+}
+
+h2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:80%;
+    background-color: #FEC260;
+    width: 100%;
+    z-index: -1;
+    transition: all .5s ease;
+
+}
+h2:hover::after{
+top:65%;
+}
+h3{
+    font-family: "Righteous", serif;
+    background-image: linear-gradient(to right, #3ca55c ,50%, #ffea00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-control:focus {
+    border-color: #FEC260;
+    outline-color: #FEC260 !important;
+    box-shadow: 0 0 0 0.25rem #fec26055;}
+
+    form{
+        border-top: 2px dotted black;
+        border-bottom: 2px dotted black;
+    }
