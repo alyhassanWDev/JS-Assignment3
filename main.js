@@ -31,6 +31,9 @@ form.addEventListener("submit", function (e) {
   ) {
     return alert("Site Name & Site URL should be valid ");
   }
+  if (siteNameInput.value === "" || siteNameInput.value === "") {
+    return alert("Please enter a name and Url");
+  }
   siteList.push(siteValues);
   localStorage.setItem("urlLists", JSON.stringify(siteList));
   displayList();
